@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azab Sering Mencuri</title>
+  <link rel="stylesheet" href="syle.css">
+  <script>
+    // Disable Right Click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      window.location.href = "https://azabseringmencuri.pages.dev/";
+    });
+
+    // Disable Shortcut Keys
+    document.addEventListener('keydown', function(e) {
+      // List of blocked keys
+      const blockedKeys = [
+        'F12', 'U', 'C', 'I', 'J', 'K', 'E', 'R'
+      ];
+
+      // Windows-based shortcuts (Ctrl or Ctrl+Shift)
+      if ((e.ctrlKey || (e.ctrlKey && e.shiftKey)) && blockedKeys.includes(e.key.toUpperCase())) {
+        e.preventDefault();
+        window.location.href = "https://azabseringmencuri.pages.dev/";
+      }
+
+      // MacOS-based shortcuts (Cmd or Cmd+Option)
+      if ((e.metaKey && e.altKey) || (e.metaKey && e.shiftKey) || e.metaKey) {
+        if (blockedKeys.includes(e.key.toUpperCase())) {
+          e.preventDefault();
+          window.location.href = "https://azabseringmencuri.pages.dev/";
+        }
+      }
+
+      // Block F12 separately
+      if (e.key === 'F12') {
+        e.preventDefault();
+        window.location.href = "https://azabseringmencuri.pages.dev/";
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="content">
+    <img src="https://clickdrive.tech/storage/cgg/Ceriabet/Azab.webp" alt="Illustration" class="center-image">
+    <p class="caption">Bro, barang curian itu kayak bom waktu. Sekarang enak, nanti meledak di hidup lo!</p>
+  </div>
+</body>
+</html>

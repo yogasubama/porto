@@ -1,0 +1,28 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto" sans-serif;
+}
+
+h1,h2,h3,h4,h5.h6 strong {
+    color: rgb(31, 28, 28);
+}
+
+p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: darkgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.
